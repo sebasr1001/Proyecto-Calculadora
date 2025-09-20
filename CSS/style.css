@@ -1,0 +1,109 @@
+ body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+     background-color: #f0f0f0;
+     /* Un fondo gris claro para la página */
+     display: flex;
+     justify-content: center;
+     /* Centra horizontalmente */
+     align-items: center;
+     /* Centra verticalmente */
+     min-height: 100vh;
+     /* Asegura que ocupe toda la altura de la pantalla */
+ }
+
+ /* Contenedor principal de la calculadora */
+ .calculadora-container {
+     width: 320px;
+     background-color: #333;
+     /* Fondo oscuro para la calculadora */
+     border-radius: 15px;
+     padding: 20px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+     /* Sombra para darle profundidad */
+ }
+
+ /* Pantalla de la calculadora */
+ .pantalla {
+     background-color: #444;
+     color: white;
+     font-size: 2.5em;
+     padding: 15px;
+     text-align: right;
+     /* Alinea los números a la derecha */
+     border-radius: 10px;
+     margin-bottom: 20px;
+     overflow: hidden;
+     /* Evita que el texto se salga */
+     white-space: nowrap;
+ }
+
+ /* Cuadrícula para los botones */
+ .botones-grid {
+     display: grid;
+     /* Crea 4 columnas de tamaño igual y flexible */
+     grid-template-columns: repeat(4, 1fr);
+     gap: 10px;
+     /* Espacio de 10px entre cada botón */
+ }
+
+ /* Estilo base para todos los botones */
+ .btn {
+     font-size: 1.5em;
+     padding: 20px;
+     border: none;
+     border-radius: 10px;
+     background-color: #666;
+     color: white;
+     cursor: pointer;
+     /* Cambia el cursor a una manito */
+     transition: background-color 0.2s;
+     /* Transición suave al pasar el mouse */
+ }
+
+ /* Efecto al pasar el mouse sobre un botón */
+ .btn:hover {
+     background-color: #777;
+ }
+
+ /* Estilos específicos para los botones de operador */
+ .operador {
+     background-color: #f39c12;
+     /* Color naranja */
+ }
+
+ .operador:hover {
+     background-color: #f5b041;
+ }
+
+ /* Estilo para el botón de limpiar (clear) */
+ .clear {
+     background-color: #e74c3c;
+     /* Color rojo */
+ }
+
+ .clear:hover {
+     background-color: #ec7063;
+ }
+
+ /* Estilo para el botón de igual */
+ .igual {
+     background-color: #2ecc71;
+     /* Color verde */
+     /* Hacemos que el botón ocupe 2 filas en la cuadrícula */
+     grid-row: span 2;
+ }
+
+ .igual:hover {
+     background-color: #58d68d;
+ }
+
+ /* Estilo para el botón cero */
+ .cero {
+     /* Hacemos que el botón ocupe 2 columnas en la cuadrícula */
+     grid-columns: span 2;
+ }
+
+ .modulo {
+    background-color: #9b59b6;
+ }
